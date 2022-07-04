@@ -22,6 +22,9 @@ function App() {
     <div className="App p-input-filled">
     
       <header className="App-header">
+        <p>
+          Base URL: {process.env.REACT_APP_BASE_URL || 'Base URL não encontrada!'}
+        </p>
         <img src={logo} className="App-logo" alt="logo" />
         <span className='p-float-label'>
           <InputText id="input_txt"  value={text} onChange={e=> setText(e.target.value)}/>
